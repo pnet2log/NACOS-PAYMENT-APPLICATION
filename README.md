@@ -17,6 +17,13 @@ The office of the financial secretary takes responsibility in collecting the fee
 ## TARGET USERS
 * The NACOS organization and 
 * The Finance department of NACOS.
-
+## FEATURES OF THE APP
+^ Model Driven App
+^ Canvas App
+^ Business Process Flow
+^ Power Automate
+^ Power BI Report Visualization and AI report insight.
+^ Microsoft Dataverse
+^ Microsoft 365 User group.
 
 
