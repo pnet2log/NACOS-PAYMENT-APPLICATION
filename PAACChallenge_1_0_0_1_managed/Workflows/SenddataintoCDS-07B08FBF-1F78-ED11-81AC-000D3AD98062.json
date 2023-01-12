@@ -1,0 +1,109 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedcommondataserviceforapps_becde"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "6be340be-1dd8-4aaa-bd95-af03bc020fcf"
+          },
+          "type": "Request",
+          "kind": "PowerApp",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Addanewrow_FinSecComment": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "Financial description statement from the financial secretary department to the president NACOS.",
+                  "x-ms-powerflows-param-ispartial": false
+                },
+                "Addanewrow_Paymentfor": {
+                  "type": "string",
+                  "description": "NACOS payment type",
+                  "x-ms-powerflows-param-ispartial": false
+                },
+                "Addanewrow_Recievedfrom": {
+                  "type": "string",
+                  "description": "Name of student making payment",
+                  "x-ms-powerflows-param-ispartial": false
+                },
+                "Addanewrow_SumOf": {
+                  "type": "number",
+                  "format": "currency",
+                  "description": "Amount paid by student",
+                  "x-ms-powerflows-param-ispartial": false
+                },
+                "Addanewrow_NACOSNumber": {
+                  "type": "string",
+                  "description": "",
+                  "x-ms-powerflows-param-ispartial": false
+                }
+              },
+              "required": [
+                "Addanewrow_FinSecComment",
+                "Addanewrow_Paymentfor",
+                "Addanewrow_Recievedfrom",
+                "Addanewrow_SumOf",
+                "Addanewrow_NACOSNumber"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Add_a_new_row": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "8602974b-cd83-4daa-8193-03a9a7118ede"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "CreateRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "pal_finsectables",
+              "item/pal_finseccomment": "@triggerBody()['Addanewrow_FinSecComment']",
+              "item/pal_nacosnumber": "@triggerBody()['Addanewrow_NACOSNumber']",
+              "item/pal_paymentfor": "@triggerBody()['Addanewrow_Paymentfor']",
+              "item/pal_recievedfrom": "@triggerBody()['Addanewrow_Recievedfrom']",
+              "item/pal_sumof": "@triggerBody()['Addanewrow_SumOf']"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

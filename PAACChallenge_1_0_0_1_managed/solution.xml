@@ -1,0 +1,145 @@
+<ImportExportXml version="9.2.22113.176" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>PAACChallenge</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="PAAC Challenge" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.1</Version>
+    <Managed>1</Managed>
+    <Publisher>
+      <UniqueName>Paulash</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Paulash" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="Model driven solutions" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>pal</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>88971</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="cr63b_feetable" behavior="0" />
+      <RootComponent type="1" schemaName="cr63b_payment" behavior="0" />
+      <RootComponent type="1" schemaName="pal_finsectable" behavior="0" />
+      <RootComponent type="9" schemaName="pal_comment" behavior="0" />
+      <RootComponent type="29" id="{07b08fbf-1f78-ed11-81ac-000d3ad98062}" behavior="0" />
+      <RootComponent type="29" id="{7eda4157-3d79-ed11-81ad-000d3ad98062}" behavior="0" />
+      <RootComponent type="62" schemaName="pal_NACOSPAYMENTAPP" behavior="0" />
+      <RootComponent type="80" schemaName="pal_NACOSPAYMENTAPP" behavior="0" />
+      <RootComponent type="300" schemaName="pal_nacospaymentapp_d0b8c" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="new_bpf_paymentrecord" displayName="BPF_PaymentRecord" solution="Active" />
+        <Dependent type="1" schemaName="cr63b_feetable" displayName="FeeTable" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="new_bpf_paymentrecord" displayName="BPF_PaymentRecord" solution="Active" />
+        <Dependent type="1" schemaName="cr63b_payment" displayName="Payment" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="new_bpf_paymentrecord" displayName="BPF_PaymentRecord" solution="Active" />
+        <Dependent type="1" schemaName="pal_finsectable" displayName="FinSec Table" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="new_bpf_paymentrecord" displayName="BPF_PaymentRecord" solution="Active" />
+        <Dependent type="300" schemaName="pal_nacospaymentapp_d0b8c" displayName="NACOS PAYMENT APP" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="new_bpf_paymentrecord" displayName="BPF_PaymentRecord" solution="Active" />
+        <Dependent type="62" schemaName="pal_NACOSPAYMENTAPP" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="new_bpf_paymentrecord" displayName="BPF_PaymentRecord" solution="Active" />
+        <Dependent type="80" schemaName="pal_NACOSPAYMENTAPP" displayName="NACOS PAYMENT APP" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Solution Checker" solution="msdyn_PowerAppsChecker (1.2.0.198)" id="{e05075eb-9d74-e811-a95c-000d3a1c53e4}">
+          <package>msdyn_PowerAppsCheckerAnchor (1.2.0.198)</package>
+        </Required>
+        <Dependent type="80" schemaName="pal_NACOSPAYMENTAPP" displayName="NACOS PAYMENT APP" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="BPF_PaymentRecord" solution="Active" id="{02581623-a975-ed11-81ab-000d3ad98062}" />
+        <Dependent type="80" schemaName="pal_NACOSPAYMENTAPP" displayName="NACOS PAYMENT APP" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="pal_NACOSPAYMENTAPP" displayName="NACOS PAYMENT APP" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="cr63b_gender" displayName="Gender" solution="Active" />
+        <Dependent type="2" schemaName="cr63b_gender" displayName="Gender" parentSchemaName="cr63b_feetable" parentDisplayName="FeeTable" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="new_sharedcommondataserviceforapps_becde" solution="Active" id.connectionreferencelogicalname="new_sharedcommondataserviceforapps_becde" />
+        <Dependent type="29" displayName="Send data into CDS" id="{07b08fbf-1f78-ed11-81ac-000d3ad98062}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="new_sharedcommondataserviceforapps_becde" solution="Active" id.connectionreferencelogicalname="new_sharedcommondataserviceforapps_becde" />
+        <Dependent type="29" displayName="NACOS Payment Notification" id="{7eda4157-3d79-ed11-81ad-000d3ad98062}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>
